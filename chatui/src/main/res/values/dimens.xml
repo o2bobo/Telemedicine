@@ -1,0 +1,21 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="chat_title_size">14sp</dimen>
+    <dimen name="chat_text_size">14dp</dimen>
+    <dimen name="chat_12sp">12sp</dimen>
+    <dimen name="chat_14sp">14sp</dimen>
+    <dimen name="tv_16sp">16sp</dimen>
+    <dimen name="tv_18sp">18sp</dimen>
+    <dimen name="standard_18sp">18sp</dimen>
+    <dimen name="standard_10">10dp</dimen>
+    <dimen name="standard_20">20dp</dimen>
+    <dimen name="standard_24">24dp</dimen>
+    <dimen name="standard_30">30dp</dimen>
+    <dimen name="standard_40">40dp</dimen>
+    <dimen name="standard_90">90dp</dimen>
+    <dimen name="standard_100">100dp</dimen>
+    <dimen name="standard_150">150dp</dimen>
+    <dimen name="standard_200">200dp</dimen>
+    <dimen name="standard_250">250dp</dimen>
+    <dimen name="standard_300">300dp</dimen>
+</resources>

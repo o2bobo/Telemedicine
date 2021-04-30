@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="项目" />
+
+
+            <TextView
+                android:id="@+id/itemName"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="结果" />
+
+
+            <TextView
+                android:id="@+id/itemValue"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="判定" />
+
+
+            <TextView
+                android:id="@+id/itemResult"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top_bottom"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="参考值" />
+
+
+            <TextView
+                android:id="@+id/upperLimit"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top_bottom"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top_bottom"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="单位" />
+
+            <TextView
+                android:id="@+id/itemUnit"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top_bottom"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

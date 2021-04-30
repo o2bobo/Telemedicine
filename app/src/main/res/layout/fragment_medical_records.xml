@@ -1,0 +1,137 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    tools:context="com.chinabsc.telemedicine.expert.expertFragment.MedicalRecordsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:id="@+id/MedicalImageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:background="@drawable/basic_border_top"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="影像检查"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/MedicalImageNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:background="@drawable/basic_border_left_right_bottom"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:paddingLeft="20dp"
+                    android:text="无"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/EgcLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:background="@drawable/basic_border_top"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="心电检查"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/EgcNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:background="@drawable/basic_border_left_right_bottom"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:paddingLeft="20dp"
+                    android:text="无"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ImageAttachmentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:background="@drawable/basic_border_top"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="图片附件"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ImageAttachmentNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:background="@drawable/basic_border_left_right_bottom"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:paddingLeft="20dp"
+                    android:text="无"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/VideoAttachmentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:background="@drawable/basic_border_top"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="视频附件"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/VideoAttachmentNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:background="@drawable/basic_border_left_right_bottom"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:paddingLeft="20dp"
+                    android:text="无"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

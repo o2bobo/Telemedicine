@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/basic_border_bottom"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/DateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/ModsInStudyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:paddingRight="20dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/NumSeriesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/DateTextView"
+        android:gravity="center_vertical|right"
+        android:paddingLeft="20dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/NumInstancesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/ModsInStudyTextView"
+        android:gravity="center_vertical|right"
+        android:paddingRight="20dp"
+        android:text="" />
+</RelativeLayout>

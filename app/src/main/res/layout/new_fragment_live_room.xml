@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+ <org.xwalk.core.XWalkView
+     android:id="@+id/xwalkView"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_above="@+id/content_buttom"
+     ></org.xwalk.core.XWalkView>
+    <LinearLayout
+        android:id="@+id/content_buttom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        >
+        <CheckBox
+            android:id="@+id/changeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:text="切换画面"
+            android:paddingLeft="20dp"
+            android:drawableLeft="@drawable/video_changeimage"
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            />
+        <CheckBox
+            android:id="@+id/join"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="进入诊室"
+            android:button="@null"
+            android:drawableLeft="@drawable/video_inout"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/DateTextView"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:id="@+id/LineLayout"
+        android:layout_width="7dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp">
+
+        <View
+            android:id="@+id/TabSelectedView"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="#6b000000" />
+
+        <View
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/dot_normal" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:gravity="center"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text=""
+            android:background="@drawable/basic_selector_radius"
+            android:textColor="@color/chat_white"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/MessageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/seeReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape_blue"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="2dp"
+            android:text="查看报告"
+            android:textColor="@color/chat_white"
+            android:textSize="@dimen/chat_12sp" />
+
+        <TextView
+            android:id="@+id/seeMedicalImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_shape_yellow"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="2dp"
+            android:text="查看影像"
+            android:textColor="@color/chat_white"
+            android:textSize="@dimen/chat_12sp" />
+    </LinearLayout>
+</LinearLayout>

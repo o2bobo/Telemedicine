@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="urls">
+        <item>https://www.bsc1.cn</item>
+        <item>https://ycyx.xiangya.com.cn:1081</item>
+        <item>http://61.136.221.48:8081</item>
+        <item>http://61.184.220.39:9000</item>
+        <item>http://218.247.6.82:15980</item>
+        <item>http://222.247.54.153:8080</item>
+    </string-array>
+
+    <string-array name="hospitals">
+        <item>蓝卫通阿里云平台</item>
+        <item>湘雅医院远程医疗平台</item>
+        <item>荆州远程医疗服务平台</item>
+        <item>恩施远程医疗服务平台</item>
+        <item>演示测试</item>
+        <item>湖南省远程医疗平台</item>
+    </string-array>
+
+    <integer-array name="logos" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </integer-array>
+
+</resources>

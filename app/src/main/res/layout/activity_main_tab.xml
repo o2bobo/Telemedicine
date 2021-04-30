@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.chinabsc.telemedicine.expert.myView.CustomViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_rg" />
+
+    <RadioGroup
+        android:id="@+id/main_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_bg"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/standard_10">
+
+        <RadioButton
+            android:id="@+id/home_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/main_home_icon"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@drawable/main_ext_color_selector"
+            android:textSize="@dimen/chat_12sp" />
+
+        <RadioButton
+            android:id="@+id/home_medical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/main_medical_icon"
+            android:gravity="center"
+            android:text="病历"
+            android:textColor="@drawable/main_ext_color_selector"
+            android:textSize="@dimen/chat_12sp" />
+
+        <RadioButton
+            android:id="@+id/home_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/main_news_icon"
+            android:gravity="center"
+            android:text="新闻"
+            android:textColor="@drawable/main_ext_color_selector"
+            android:textSize="@dimen/chat_12sp" />
+
+        <RadioButton
+            android:id="@+id/home_edu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/main_edu_icon"
+            android:gravity="center"
+            android:text="教育"
+            android:textColor="@drawable/main_ext_color_selector"
+            android:textSize="@dimen/chat_12sp" />
+
+        <RadioButton
+            android:id="@+id/home_coop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/main_coop_icon"
+            android:gravity="center"
+            android:text="合作"
+            android:textColor="@drawable/main_ext_color_selector"
+            android:textSize="@dimen/chat_12sp" />
+
+    </RadioGroup>
+
+
+</RelativeLayout>

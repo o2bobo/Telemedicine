@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="登记时间" />
+
+
+            <TextView
+                android:id="@+id/CreateTimeView"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="报告医师" />
+
+
+            <TextView
+                android:id="@+id/DoctorNameView"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="患者姓名" />
+
+
+            <TextView
+                android:id="@+id/NameView"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="年龄" />
+
+
+            <TextView
+                android:id="@+id/AgeView"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="性別" />
+
+            <TextView
+                android:id="@+id/GenderView"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top_bottom"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="检查单位" />
+
+
+            <TextView
+                android:id="@+id/SndSiteNameView"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top_bottom"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text="" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

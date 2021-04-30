@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/NameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text=""
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp">
+
+        <TextView
+            android:id="@+id/HospitalNumTitleView"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/basic_border_top"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="专科联盟医院"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/HospitalNumTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/HospitalNumTitleView"
+            android:background="@drawable/basic_border_top"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp"
+            android:text=""
+            android:textColor="#ff3f5f"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/HospitalNumTextView"
+            android:background="@drawable/basic_border_top"
+            android:gravity="left|center"
+            android:text=" 家"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:id="@+id/ExcerptTitleView"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/basic_border_top_bottom"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="介绍"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ExcerptTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/ExcerptTitleView"
+            android:background="@drawable/basic_border_top_bottom"
+            android:gravity="left|center"
+            android:padding="10dp"
+            android:text=""
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+</LinearLayout>

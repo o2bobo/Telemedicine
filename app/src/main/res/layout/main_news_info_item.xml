@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/basic_border_top_bottom">
+
+        <RelativeLayout
+            android:id="@+id/LeftLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/PicImageView"
+                android:layout_width="93dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/TitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/PicImageView"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text=""
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/PicImageView"
+                android:layout_below="@id/TitleTextView"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/PicImageView"
+                android:paddingLeft="10dp"
+                android:text="" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

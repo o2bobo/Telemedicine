@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".expertFragment.HomeCooperationFragment">
+
+    <!-- <ImageView
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/standard_200"
+         android:src="@color/simple_player_stream_name_playing" />
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="@dimen/standard_30"
+         android:layout_marginTop="@dimen/standard_10"
+         android:layout_marginBottom="@dimen/standard_10"
+         android:text="医疗合作"
+         android:textSize="@dimen/chat_12sp" />-->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_250"
+        android:layout_marginLeft="@dimen/standard_30"
+        android:layout_marginTop="@dimen/standard_100"
+        android:layout_marginRight="@dimen/standard_30"
+        app:cardCornerRadius="@dimen/standard_10"
+        app:cardElevation="@dimen/standard_20">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_250"
+            android:layout_marginLeft="@dimen/standard_30"
+
+            android:layout_marginRight="@dimen/standard_30"
+            android:background="@color/mwhite"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/hor_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/gray" />
+
+            <View
+                android:id="@+id/ver_line"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/AllianceLayout"
+                android:layout_width="@dimen/standard_150"
+                android:layout_height="@dimen/standard_100"
+                android:layout_above="@id/hor_line"
+                android:layout_toLeftOf="@id/ver_line"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="49dp"
+                    android:layout_height="49dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/main_ylt" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="医联体"
+                    android:textSize="@dimen/chat_14sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/UnionLayout"
+                android:layout_width="@dimen/standard_150"
+                android:layout_height="@dimen/standard_100"
+                android:layout_above="@id/hor_line"
+                android:layout_toRightOf="@id/ver_line"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="49dp"
+                    android:layout_height="49dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/main_zklm" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="专科联盟"
+                    android:textSize="@dimen/chat_14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chat_group"
+                android:layout_width="@dimen/standard_150"
+                android:layout_height="@dimen/standard_100"
+                android:layout_below="@id/hor_line"
+                android:layout_marginTop="@dimen/standard_20"
+                android:layout_toLeftOf="@id/ver_line"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="49dp"
+                    android:layout_height="49dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/main_tlq" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="讨论群"
+                    android:textSize="@dimen/chat_14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/connact"
+                android:layout_width="@dimen/standard_150"
+                android:layout_height="@dimen/standard_100"
+                android:layout_below="@id/hor_line"
+                android:layout_marginTop="@dimen/standard_20"
+                android:layout_toRightOf="@id/ver_line"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="49dp"
+                    android:layout_height="49dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/main_ywlxr" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="联系人"
+                    android:textSize="@dimen/chat_14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

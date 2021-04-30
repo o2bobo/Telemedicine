@@ -1,0 +1,487 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".expertFragment.MedicalRecordsFragment">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_300"
+        android:layout_marginLeft="@dimen/standard_30"
+        android:layout_marginTop="@dimen/standard_100"
+        android:layout_marginRight="@dimen/standard_30"
+        app:cardCornerRadius="@dimen/standard_10"
+        app:cardElevation="@dimen/standard_20">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/ver_line"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/EmrNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/standard_40"
+                android:layout_toLeftOf="@id/ver_line">
+
+                <ImageView
+                    android:id="@+id/EmrNumberImg"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/electronic_records_emr2x" />
+
+                <TextView
+
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/EmrNumberImg"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="EMR"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+
+                <View
+                    android:id="@+id/t51"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_toRightOf="@id/EmrNumberImg" />
+
+                <View
+                    android:id="@+id/t52"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_toRightOf="@id/t51" />
+
+                <TextView
+                    android:id="@+id/EmrNumberText"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_toLeftOf="@id/t52"
+                    android:background="@drawable/red_circle"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="0"
+                    android:textColor="@color/chat_white"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/BizcloudNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/standard_40"
+                android:layout_toRightOf="@id/ver_line"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/BizcloudNumberImg"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/electronic_records_biz2x" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/BizcloudNumberImg"
+                    android:layout_marginTop="15dp"
+                    android:text="影像检查"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+
+                <View
+                    android:id="@+id/t41"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_toRightOf="@id/BizcloudNumberImg" />
+
+                <View
+                    android:id="@+id/t42"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_toRightOf="@id/t41" />
+
+                <TextView
+                    android:id="@+id/BizcloudNumberText"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_toLeftOf="@id/t42"
+                    android:background="@drawable/red_circle"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="0"
+                    android:textColor="@color/chat_white"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/hor_line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/EmrNumber"
+                android:layout_marginLeft="@dimen/standard_30"
+                android:layout_marginTop="@dimen/standard_10"
+                android:layout_marginRight="@dimen/standard_30"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/EltNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hor_line1"
+                android:layout_marginRight="@dimen/standard_40"
+                android:layout_toLeftOf="@id/ver_line">
+
+                <ImageView
+                    android:id="@+id/EltNumberImg"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/electronic_records_elt2x" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/EltNumberImg"
+                    android:layout_marginTop="15dp"
+                    android:text="检验记录"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+
+                <View
+                    android:id="@+id/t71"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_toRightOf="@id/EltNumberImg" />
+
+                <View
+                    android:id="@+id/t72"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_toRightOf="@id/t71" />
+
+                <TextView
+                    android:id="@+id/EltNumberText"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_toLeftOf="@id/t72"
+                    android:background="@drawable/red_circle"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="0"
+                    android:textColor="@color/chat_white"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/EsoNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hor_line1"
+                android:layout_marginLeft="@dimen/standard_40"
+                android:layout_toRightOf="@id/ver_line">
+
+                <ImageView
+                    android:id="@+id/EsoNumberImg"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/userinfo_item2x" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/EsoNumberImg"
+                    android:layout_marginTop="15dp"
+                    android:text="长期医嘱"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+
+                <View
+                    android:id="@+id/t1"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_toRightOf="@id/EsoNumberImg" />
+
+                <View
+                    android:id="@+id/t2"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_toRightOf="@id/t1" />
+
+                <TextView
+                    android:id="@+id/EsoNumberText"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_toLeftOf="@id/t2"
+                    android:background="@drawable/red_circle"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="0"
+                    android:textColor="@color/chat_white"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/hor_line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/EltNumber"
+                android:layout_marginLeft="@dimen/standard_30"
+                android:layout_marginTop="@dimen/standard_10"
+                android:layout_marginRight="@dimen/standard_30"
+                android:background="@color/gray" />
+            <RelativeLayout
+                android:id="@+id/EtoNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hor_line2"
+                android:layout_marginRight="@dimen/standard_40"
+                android:layout_toLeftOf="@id/ver_line"
+               >
+
+                <ImageView
+                    android:id="@+id/EtoNumberImg"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/electronic_records_eto2x" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/EtoNumberImg"
+                    android:layout_marginTop="15dp"
+                    android:text="临时医嘱"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+
+                <View
+                    android:id="@+id/t21"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_toRightOf="@id/EtoNumberImg" />
+
+                <View
+                    android:id="@+id/t22"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_toRightOf="@id/t21" />
+
+                <TextView
+                    android:id="@+id/EtoNumberText"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_toLeftOf="@id/t22"
+                    android:background="@drawable/red_circle"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="0"
+                    android:textColor="@color/chat_white"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/EoNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hor_line2"
+                android:layout_marginLeft="@dimen/standard_40"
+                android:layout_toRightOf="@id/ver_line">
+
+                <ImageView
+                    android:id="@+id/EoNumberImg"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/electronic_records_eo2x" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/EoNumberImg"
+                    android:layout_marginTop="15dp"
+                    android:text="手术记录"
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+
+                <View
+                    android:id="@+id/t31"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_toRightOf="@id/EoNumberImg" />
+
+                <View
+                    android:id="@+id/t32"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_toRightOf="@id/t31" />
+
+                <TextView
+                    android:id="@+id/EoNumberText"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_toLeftOf="@id/t32"
+                    android:background="@drawable/red_circle"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="0"
+                    android:textColor="@color/chat_white"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:id="@+id/EcgNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/EcgNumberImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/electronic_records_ecg2x" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/EcgNumberImg"
+                android:layout_marginTop="15dp"
+                android:text="心电检查"
+                android:textColor="#000000"
+                android:textSize="12dp" />
+
+            <View
+                android:id="@+id/t61"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_toRightOf="@id/EcgNumberImg" />
+
+            <View
+                android:id="@+id/t62"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_toRightOf="@id/t61" />
+
+            <TextView
+                android:id="@+id/EcgNumberText"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_toLeftOf="@id/t62"
+                android:background="@drawable/red_circle"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="0"
+                android:textColor="@color/chat_white"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ElcNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ElcNumberImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/electronic_records_elc2x" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ElcNumberImg"
+                android:layout_marginTop="15dp"
+                android:text="检查记录"
+                android:textColor="#000000"
+                android:textSize="12dp" />
+
+            <View
+                android:id="@+id/t81"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_toRightOf="@id/ElcNumberImg" />
+
+            <View
+                android:id="@+id/t82"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_toRightOf="@id/t81" />
+
+            <TextView
+                android:id="@+id/ElcNumberText"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_toLeftOf="@id/t82"
+                android:background="@drawable/red_circle"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="0"
+                android:textColor="@color/chat_white"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".expertActivity.UserInfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/BackImageView"
+            android:layout_width="24dp"
+            android:layout_height="21dp"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="left"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/basic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="个人信息"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/UserHeadImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="17dp"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top"
+                android:gravity="center"
+                android:text="姓  名" />
+
+            <TextView
+                android:id="@+id/UserNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top_right"
+                android:gravity="center"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top"
+                android:gravity="center"
+                android:text="职  称" />
+
+            <TextView
+                android:id="@+id/JobTitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top_right"
+                android:gravity="center"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top"
+                android:gravity="center"
+                android:text="所在医院" />
+
+            <TextView
+                android:id="@+id/SiteNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top_right"
+                android:gravity="center"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top_bottom"
+                android:gravity="center"
+                android:text="所在科室" />
+
+            <TextView
+                android:id="@+id/DepartNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top_right_bottom"
+                android:gravity="center"
+                android:text="" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/basic_border_bottom">
+
+    <ImageView
+        android:id="@+id/UserHeadImageView"
+        android:layout_width="52dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="6dp"
+        android:background="#ededed"
+        android:src="@drawable/basic_image_user" />
+
+    <ImageView
+        android:layout_width="53dp"
+        android:layout_height="73dp"
+        android:layout_alignLeft="@id/UserHeadImageView"
+        android:layout_alignTop="@id/UserHeadImageView"
+        android:src="@drawable/basic_image_user_border" />
+
+
+    <TextView
+        android:id="@+id/NameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/UserHeadImageView"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/JobTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/NameTextView"
+        android:layout_toRightOf="@id/UserHeadImageView"
+        android:gravity="left|center_vertical"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/SkillTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/UserHeadImageView"
+        android:layout_below="@id/JobTitleTextView"
+        android:layout_toRightOf="@id/UserHeadImageView"
+        android:paddingLeft="10dp"
+        android:text="" />
+
+</RelativeLayout>

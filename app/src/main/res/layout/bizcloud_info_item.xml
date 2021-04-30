@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/DateTextView"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text=""
+                android:textStyle="bold" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="检查类别" />
+
+            <TextView
+                android:id="@+id/BodyPartText"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="检查部位" />
+
+
+            <TextView
+                android:id="@+id/ModalityText"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="影像数" />
+
+
+            <TextView
+                android:id="@+id/InstanceNumText"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/InstanceClickText"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_top"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textStyle="bold"
+                android:text="查看影像" />
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/HistoryTitleText"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/HistoryView"
+            android:layout_alignTop="@+id/HistoryView"
+            android:background="@drawable/basic_border_left_top"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="病历摘要" />
+
+        <TextView
+            android:id="@+id/HistoryView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/HistoryTitleText"
+            android:background="@drawable/basic_border_left_top"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:text="点击查看" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/DiagnosisTitleText"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/DiagnosisView"
+            android:layout_alignTop="@+id/DiagnosisView"
+            android:background="@drawable/basic_border_left_top"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="临床诊断" />
+
+        <TextView
+            android:id="@+id/DiagnosisView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/DiagnosisTitleText"
+            android:background="@drawable/basic_border_left_top"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:text="点击查看" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/DescriptionTitleText"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/DescriptionView"
+            android:layout_alignTop="@+id/DescriptionView"
+            android:background="@drawable/basic_border_left_top"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="影像表现" />
+
+        <TextView
+            android:id="@+id/DescriptionView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/DescriptionTitleText"
+            android:background="@drawable/basic_border_left_top"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:text="点击查看" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/OpinionsTitleText"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/OpinionsView"
+            android:layout_alignTop="@+id/OpinionsView"
+            android:background="@drawable/basic_border_left_top"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="影像诊断" />
+
+        <TextView
+            android:id="@+id/OpinionsView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/OpinionsTitleText"
+            android:background="@drawable/basic_border_left_top"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:text="点击查看" />
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top_bottom"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="报告医师" />
+
+            <TextView
+                android:id="@+id/ExpertNameView"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/basic_border_left_top_bottom"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

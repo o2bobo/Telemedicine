@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".expertActivity.UserSignActivity">
+
+    <include layout="@layout/commen_title" />
+
+    <ImageView
+        android:id="@+id/mySign"
+        android:layout_width="@dimen/standard_200"
+        android:layout_height="@dimen/standard_200"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:layout_width="@dimen/standard_100"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/standard_30"
+        android:background="@drawable/button_shape_blue"
+        android:text="修改签名" />
+</LinearLayout>

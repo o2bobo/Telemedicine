@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.source.adnroid.comm.ui.activity.ChatActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/TitleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/chat_back_image"
+            android:layout_width="@dimen/standard_24"
+            android:layout_height="@dimen/standard_20"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/standard_10"
+            android:layout_marginTop="@dimen/standard_10"
+            android:layout_marginBottom="@dimen/standard_10"
+            android:onClick="onBackClick"
+            android:src="@drawable/chat_basic_back" />
+
+        <TextView
+            android:id="@+id/chat_title_name"
+            android:layout_width="@dimen/standard_250"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/standard_18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/chat_info_image"
+            android:layout_width="@dimen/standard_24"
+            android:layout_height="@dimen/standard_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/standard_10"
+            android:layout_marginRight="@dimen/standard_10"
+            android:layout_marginBottom="@dimen/standard_10"
+            android:src="@mipmap/chat_msg" />
+    </RelativeLayout>
+    <!-- 用一个帧布局来占一个位置，目的是给fragment用  通用设计方便模块化-->
+    <FrameLayout
+        android:id="@+id/chat_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

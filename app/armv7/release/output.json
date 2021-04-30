@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+[{"outputType":{"type":"APK"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":14,"versionName":"1.1","enabled":true,"outputFile":"telemedicine_0518.apk","fullName":"armv7Release","baseName":"armv7-release"},"path":"telemedicine_0518.apk","properties":{}}]
+=======
+[{"outputType":{"type":"APK"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":1,"versionName":"1.0","enabled":true,"outputFile":"telemedicine_0514.apk","fullName":"armv7Release","baseName":"armv7-release"},"path":"telemedicine_0514.apk","properties":{}}]
+>>>>>>> origin/master

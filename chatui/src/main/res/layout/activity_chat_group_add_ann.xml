@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:gravity="center_horizontal"
+    tools:context="com.source.adnroid.comm.ui.activity.ChatGroupDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/TitleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/BackImageView"
+            android:layout_width="@dimen/standard_24"
+            android:layout_height="@dimen/standard_20"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/standard_10"
+            android:layout_marginTop="@dimen/standard_10"
+            android:layout_marginBottom="@dimen/standard_10"
+            android:src="@drawable/chat_basic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="添加公告"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/standard_18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/AnnTextEdit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_100"
+        android:layout_below="@id/TitleLayout"
+        android:layout_marginLeft="@dimen/standard_20"
+        android:layout_marginTop="@dimen/standard_20"
+        android:layout_marginRight="@dimen/standard_20"
+        android:layout_marginBottom="@dimen/standard_20"
+        android:gravity="top|left"
+        android:hint="请输入公告内容" />
+
+    <Button
+        android:id="@+id/SendButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/standard_20"
+        android:layout_marginRight="@dimen/standard_20"
+        android:layout_marginBottom="@dimen/standard_20"
+        android:background="@drawable/chat_basic_selector_btn"
+        android:text="发    布"
+        android:textColor="#ffffffff"
+        android:textSize="17sp" />
+
+    <RelativeLayout
+        android:id="@+id/LoadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#88ffffff"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/LoadingProgress"
+            android:layout_width="@dimen/standard_90"
+            android:layout_height="@dimen/standard_90"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/chat_basic_center_loading" />
+    </RelativeLayout>
+</RelativeLayout>
+
